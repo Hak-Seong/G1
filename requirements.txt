@@ -1,0 +1,21 @@
+# Phase 0+ core (CPU-only local STT)
+faster-whisper>=1.0.3
+av>=12.0.0
+numpy>=1.26.0
+soundfile>=0.12.1
+
+# Document output (Phase 1)
+python-docx>=1.1.0
+
+# UI (Phase 1+)
+PySide6>=6.6.0
+
+# Diarization (Phase 2) — install when approved
+# sherpa-onnx>=1.10.0
+
+# Fuzzy term candidates (Phase 4)
+rapidfuzz>=3.6.0
+
+# Dev / Phase 0
+pytest>=8.0.0
+psutil>=5.9.0

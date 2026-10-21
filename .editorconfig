@@ -1,0 +1,25 @@
+# https://editorconfig.org
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# Phase 1 / 2A engines are committed as CRLF (SHA-256 baselines).
+# Pin CRLF so editors do not rewrite them on save (EditorConfig inherits [*]).
+[src/transcriber/worker/pipeline.py]
+end_of_line = crlf
+insert_final_newline = unset
+trim_trailing_whitespace = unset
+
+[src/phase2a_diarization/pipeline.py]
+end_of_line = crlf
+insert_final_newline = unset
+trim_trailing_whitespace = unset
+
+# Windows launch scripts — CRLF required for cmd.exe
+[*.bat]
+end_of_line = crlf
+
+[*.cmd]
+end_of_line = crlf

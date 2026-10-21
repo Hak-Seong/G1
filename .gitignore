@@ -1,0 +1,62 @@
+﻿# 녹음 파일 (어떤 위치든 커밋 금지)
+*.wav
+*.mp3
+*.m4a
+*.wma
+*.aac
+*.flac
+*.ogg
+
+# 녹취 산출물
+*.docx
+~$*.docx
+
+# 작업 데이터·결과 폴더
+data/
+samples_real/
+output/
+test_workspace/
+experiments/**/results/
+
+# 정답(GT) 실데이터: annotations 폴더 기본 제외 (템플릿·스키마·README만 예외)
+experiments/**/annotations/**
+!experiments/**/annotations/
+!experiments/**/annotations/README.md
+!experiments/**/annotations/*.template.json
+!experiments/**/annotations/*.schema.json
+
+# 정답(GT) 관례 경로·파일명 패턴
+experiments/**/gt/**
+**/*_gt.json
+**/*.gt.json
+
+# 모델 가중치
+models/
+*.bin
+*.onnx
+*.pt
+*.safetensors
+
+# 로그
+logs/
+*.log
+
+# Python·도구
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 빌드
+build/
+dist/
+
+# IDE / OS
+.idea/
+.vscode/
+Thumbs.db
+desktop.ini

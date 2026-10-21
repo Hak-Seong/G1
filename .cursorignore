@@ -1,0 +1,43 @@
+# Real audio / transcripts — never send to Agent context
+data/
+samples_real/
+output/
+test_workspace/
+*.wav
+*.mp3
+*.m4a
+*.wma
+*.flac
+*.ogg
+*.aac
+
+# Model weights (large binaries)
+models/
+**/*.bin
+**/*.onnx
+**/*.pt
+**/*.gguf
+
+# Job working directories and generated docs
+**/job_*/
+**/checkpoint/
+*.docx
+raw_transcript.json
+edits.json
+edit_log.jsonl
+
+# Secrets / local env
+.env
+.env.*
+*.pem
+*.key
+
+# Python / build
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+dist/
+build/
+*.egg-info/
